@@ -52,7 +52,7 @@ android {
     }
 
     defaultConfig {
-        applicationId 'com.ketanchoyal.our_e_school'
+        applicationId 'com.example.eschool'
         minSdkVersion 21
         targetSdkVersion 28
         versionCode flutterVersionCode.toInteger()
