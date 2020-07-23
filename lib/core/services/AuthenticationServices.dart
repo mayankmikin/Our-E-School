@@ -91,7 +91,8 @@ class AuthenticationServices extends Services {
     } else {
       print('School Found');
     }
-
+    print("loginType is");
+    print(loginType);
     CollectionReference _userRef = _schoolLoginRef.collection(loginType);
 
     await _userRef
@@ -166,6 +167,7 @@ class AuthenticationServices extends Services {
       String schoolCode) async {
     // await sharedPreferencesHelper.clearAllData();
     try {
+         print("Regestering using Email and Password "+email+" "+password);
       AuthErrors authErrors = AuthErrors.UNKNOWN;
       AuthResult authResult = await auth.createUserWithEmailAndPassword(
           email: email, password: password);
